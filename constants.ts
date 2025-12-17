@@ -80,13 +80,7 @@ export const PROJECTS: Project[] = [
     imageUrl: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=800",
     details: "Creating a classification model able to predict diabetes from health indicators and lifestyle from BRFSS 2021 Survey datasets with XGBoost Algorithm, resulting with 96.92% accuracy. Made a web prototype and submitted for TSDN 2024.",
     link: "",
-    visualConfig: {
-      type: 'bar',
-      data: {
-        labels: ['Accuracy', 'Precision', 'Recall', 'F1-Score'],
-        values: [96.9, 88.5, 92.1, 90.3]
-      }
-    }
+    notebookPath: "/notebooks/diabetes-risk.ipynb"
   }
 ];
 
