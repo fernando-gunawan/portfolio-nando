@@ -24,13 +24,4 @@ Welcome to my Portfolio. This website is designed not just to list projects, but
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/) (Custom Config), CSS3 Keyframe Animations
 - **Icons**: [Lucide React](https://lucide.dev/)
 
-##  Getting Started
-
-Follow these steps to set up and run the project locally on your machine.
-
-### Prerequisites
-
-- **Node.js**: Ensure you have Node.js installed.
-- **Git**: (Optional) For version control.
-
 <p align="center">Created by Fernando</p>
