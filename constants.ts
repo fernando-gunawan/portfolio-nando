@@ -4,7 +4,6 @@ import { Project, Experience, Skill, Organization, Recommendation } from './type
 export const USER_INFO = {
   name: "Fernando",
   role: "Information System Student | Big Data & Web Dev",
-  // Menggunakan username dari email/linkedin
   githubUsername: "fernando-gunawan",
   about: "Mahasiswa Sistem Informasi di Universitas Multimedia Nusantara dengan IPK 3.43. Memiliki minat mendalam pada Big Data Analytics, Data Analysis, dan Web Development. Berpengalaman dalam Machine Learning dan Full Stack Web Development sederhana.",
   bio: [
@@ -15,9 +14,8 @@ export const USER_INFO = {
   avatarUrl: "https://i.ibb.co.com/HfBVwGjd/CEL00086.jpg",
   email: "fernandogunawan7@gmail.com",
   linkedin: "linkedin.com/in/fernando-gunawan7",
-  github: "github.com/fernando-gunawan", // Asumsi dari pattern linkedin/email
+  github: "github.com/fernando-gunawan",
   location: "Tangerang, Indonesia",
-  // Ganti link ini dengan link file PDF Google Drive Anda (pastikan aksesnya 'Anyone with the link')
   cvUrl: "https://drive.google.com/file/d/12nWaOfxS6V4PbREEDXqngaYUjx6hHEu1/view?usp=drive_link"
 };
 
