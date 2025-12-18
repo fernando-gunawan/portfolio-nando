@@ -81,7 +81,7 @@ function App() {
             </span>
           </a>
 
-          <div className="hidden md:flex gap-8 text-sm font-medium text-slate-400">
+          <div className="hidden md:flex gap-8 text-sm font-medium text-slate-200">
             {['Bio', 'Skills', 'Projects', 'Experience', 'Organization'].map((item) => (
               <a key={item} href={`#${item.toLowerCase()}`} className="hover:text-accent transition-colors relative group">
                 {item}
@@ -126,12 +126,12 @@ function App() {
 
               <div className="p-6 rounded-2xl bg-white/5 border border-white/5 backdrop-blur-sm mb-10 max-w-2xl mx-auto lg:mx-0 shadow-2xl relative overflow-hidden group">
                 <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-accent to-purple"></div>
-                <div className="space-y-4 text-slate-300 leading-relaxed text-base md:text-lg">
+                <div className="space-y-4 text-slate-100 leading-relaxed text-base md:text-lg">
                   <p>
                     <span className="text-accent font-mono mr-2">&gt;</span>
                     <Typewriter text={USER_INFO.bio[0]} delay={20} />
                   </p>
-                  <p className="hidden md:block opacity-80">{USER_INFO.bio[1]}</p>
+                  <p className="hidden md:block text-slate-200">{USER_INFO.bio[1]}</p>
                 </div>
               </div>
 
@@ -185,7 +185,7 @@ function App() {
                         <Sparkles size={20} />
                       </div>
                       <div>
-                        <div className="text-xs text-slate-400 font-mono">Status</div>
+                        <div className="text-xs text-slate-200 font-mono">Status</div>
                         <div className="text-sm font-bold text-white">Developing...</div>
                       </div>
                     </div>
@@ -196,7 +196,7 @@ function App() {
           </div>
         </div>
 
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce text-slate-500 opacity-50 hidden md:block z-10">
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce text-slate-200 opacity-50 hidden md:block z-10">
           <ChevronDown size={32} />
         </div>
       </header>
@@ -213,7 +213,7 @@ function App() {
             <div className="relative">
               <div className="absolute -left-6 top-0 w-1 h-12 bg-accent"></div>
               <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">Featured <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-purple">Projects</span></h2>
-              <p className="text-slate-400 max-w-xl text-lg">
+              <p className="text-slate-200 max-w-xl text-lg">
                 Implementasi nyata dari analisis data dan machine learning yang memberikan dampak.
               </p>
             </div>
@@ -245,7 +245,7 @@ function App() {
         <div className="container mx-auto px-6 max-w-7xl relative z-10">
           <div className="text-center mb-16 reveal">
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Experience Journey</h2>
-            <div className="inline-block px-4 py-1 rounded-full border border-white/10 bg-white/5 text-slate-400 text-sm font-mono">
+            <div className="inline-block px-4 py-1 rounded-full border border-white/10 bg-white/5 text-slate-200 text-sm font-mono">
               Professional & Part-time Roles
             </div>
           </div>
@@ -259,7 +259,7 @@ function App() {
           <div className="flex flex-col md:flex-row items-center justify-between mb-12 reveal">
             <div>
               <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">Organization & <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-purple">Leadership</span></h2>
-              <p className="text-slate-400 max-w-xl text-lg">
+              <p className="text-slate-200 max-w-xl text-lg">
                 Pengalaman memimpin tim dan berkontribusi dalam komunitas teknologi.
               </p>
             </div>
@@ -277,7 +277,7 @@ function App() {
           <h2 className="text-5xl md:text-7xl font-bold text-white mb-8 tracking-tight">
             Ready to <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-purple">Connect?</span>
           </h2>
-          <p className="text-xl text-slate-400 mb-12 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xl text-slate-200 mb-12 max-w-2xl mx-auto leading-relaxed">
             Saya siap membawa etos kerja keras dan kemampuan analisis data saya ke tim Anda. Mari diskusikan peluang kolaborasi.
           </p>
 
@@ -313,7 +313,7 @@ function App() {
           <div className="flex items-center justify-center gap-2 mb-4 text-slate-200 font-bold text-xl">
             <img src="/logo.svg" alt="Logo" className="w-8 h-8 object-contain" /> Fernando
           </div>
-          <p className="text-slate-500 text-sm">&copy; {new Date().getFullYear()} {USER_INFO.name}. <br />Built with React & Tailwind.</p>
+          <p className="text-slate-300 text-sm">&copy; {new Date().getFullYear()} {USER_INFO.name}. <br />Built with React & Tailwind.</p>
         </div>
       </footer>
 

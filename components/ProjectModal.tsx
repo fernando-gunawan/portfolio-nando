@@ -60,7 +60,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
             </div>
             <div>
               <h3 className="text-white font-bold text-lg leading-tight">{project.title}</h3>
-              <p className="text-slate-400 text-xs font-mono">
+              <p className="text-slate-200 text-xs font-mono">
                 {project.notebookPath ? 'Notebook Preview' : (project.gallery ? 'Prototype Gallery' : (project.reportPath ? 'Project Report' : 'Project Details'))}
               </p>
             </div>
@@ -108,13 +108,13 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
             ) : isIpynb ? (
               <NotebookViewer url={project.notebookPath!} />
             ) : (
-              <div className="absolute inset-0 flex flex-col items-center justify-center bg-[#0f172a] text-slate-400 gap-6 p-8 text-center">
+              <div className="absolute inset-0 flex flex-col items-center justify-center bg-[#0f172a] text-slate-200 gap-6 p-8 text-center">
                 <div className="p-6 bg-slate-800 rounded-full border border-white/5">
                   <FileCode size={48} className="text-accent" />
                 </div>
                 <div>
                   <h4 className="text-xl font-bold text-white mb-2">File Notebook Tersedia</h4>
-                  <p className="max-w-md text-sm text-slate-500">
+                  <p className="max-w-md text-sm text-slate-300">
                     File ini berformat <code>.ipynb</code> dan tidak dapat dipreview langsung di browser tanpa server Jupyter.
                   </p>
                 </div>
@@ -162,7 +162,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
                 </div>
 
                 {/* Info Text Overlay */}
-                <div className="absolute top-4 left-1/2 -translate-x-1/2 bg-black/60 backdrop-blur-md px-4 py-1 rounded-full text-xs text-slate-300 border border-white/10 pointer-events-none">
+                <div className="absolute top-4 left-1/2 -translate-x-1/2 bg-black/60 backdrop-blur-md px-4 py-1 rounded-full text-xs text-slate-100 border border-white/10 pointer-events-none">
                   Screenshot {currentSlide + 1} of {project.gallery.length}
                 </div>
               </div>
@@ -186,7 +186,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
             </div>
           ) : (
             /* DEFAULT / NO PREVIEW */
-            <div className="absolute inset-0 flex flex-col items-center justify-center bg-transparent text-slate-400 gap-4 p-8 text-center">
+            <div className="absolute inset-0 flex flex-col items-center justify-center bg-transparent text-slate-200 gap-4 p-8 text-center">
               <div className="p-4 bg-slate-800 rounded-full">
                 <AlertCircle size={40} className="text-slate-500" />
               </div>
