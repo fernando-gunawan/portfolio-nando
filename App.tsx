@@ -115,7 +115,7 @@ function App() {
 
               <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight leading-[1.1]">
                 Turning Raw Data into <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent via-white to-purple animate-pulse-slow">
+                <span className="text-accent animate-pulse-slow">
                   Business Value
                 </span>
               </h1>
@@ -212,7 +212,7 @@ function App() {
           <div className="flex flex-col md:flex-row justify-between items-end mb-16 reveal">
             <div className="relative">
               <div className="absolute -left-6 top-0 w-1 h-12 bg-accent"></div>
-              <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">Featured <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-purple">Projects</span></h2>
+              <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">Featured <span className="text-accent">Projects</span></h2>
               <p className="text-slate-200 max-w-xl text-lg">
                 Implementasi nyata dari analisis data dan machine learning yang memberikan dampak.
               </p>
@@ -258,7 +258,7 @@ function App() {
         <div className="container mx-auto px-6 max-w-7xl relative z-10">
           <div className="flex flex-col md:flex-row items-center justify-between mb-12 reveal">
             <div>
-              <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">Organization & <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-purple">Leadership</span></h2>
+              <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">Organization & <span className="text-accent">Leadership</span></h2>
               <p className="text-slate-200 max-w-xl text-lg">
                 Pengalaman memimpin tim dan berkontribusi dalam komunitas teknologi.
               </p>
@@ -275,7 +275,7 @@ function App() {
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#020617] to-accent/10 z-0"></div>
         <div className="container mx-auto px-6 max-w-7xl relative z-10 text-center reveal">
           <h2 className="text-5xl md:text-7xl font-bold text-white mb-8 tracking-tight">
-            Ready to <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-purple">Connect?</span>
+            Ready to <span className="text-accent">Connect?</span>
           </h2>
           <p className="text-xl text-slate-200 mb-12 max-w-2xl mx-auto leading-relaxed">
             Saya siap membawa etos kerja keras dan kemampuan analisis data saya ke tim Anda. Mari diskusikan peluang kolaborasi.

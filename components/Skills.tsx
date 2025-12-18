@@ -1,17 +1,17 @@
 import React from 'react';
 import { SKILLS } from '../constants';
-import { 
-  Cpu, Database, Layout, Terminal, 
-  Code2, Sigma, BarChart, Zap, Grid, 
+import {
+  Cpu, Database, Layout, Terminal,
+  Code2, Sigma, BarChart, Zap, Grid,
   BrainCircuit, Sparkles, LineChart, GitBranch,
   Box
 } from 'lucide-react';
 
 const Skills: React.FC = () => {
-  
+
   const getSkillIcon = (name: string, category: string) => {
     const n = name.toLowerCase();
-    
+
     // Specific mappings
     if (n.includes('python')) return <Code2 size={24} />;
     if (n.includes('sql')) return <Database size={24} />;
@@ -25,7 +25,7 @@ const Skills: React.FC = () => {
     if (n.includes('git')) return <GitBranch size={24} />;
 
     // Category fallbacks
-    switch(category) {
+    switch (category) {
       case 'Language': return <Terminal size={24} />;
       case 'Tool': return <Cpu size={24} />;
       case 'Framework': return <Box size={24} />;
@@ -41,17 +41,17 @@ const Skills: React.FC = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16 reveal">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-4 tracking-tight">
-            Technical <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-purple">Arsenal</span>
+            Technical <span className="text-accent">Arsenal</span>
           </h2>
-          <p className="text-slate-400 max-w-xl mx-auto">
+          <p className="text-slate-200 max-w-xl mx-auto">
             Rangkaian teknologi yang saya gunakan untuk mengubah raw data menjadi solusi cerdas.
           </p>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {SKILLS.map((skill, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="group reveal-zoom bg-slate-900/50 backdrop-blur-sm border border-slate-800 p-5 rounded-xl hover:border-accent/50 hover:bg-slate-800/80 transition-all duration-300 hover:-translate-y-1"
               style={{ transitionDelay: `${index * 50}ms` }}
             >
