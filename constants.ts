@@ -8,7 +8,7 @@ export const USER_INFO = {
   about: "Mahasiswa Sistem Informasi di Universitas Multimedia Nusantara dengan IPK 3.43. Memiliki minat mendalam pada Big Data Analytics, Data Analysis, dan Web Development. Berpengalaman dalam Machine Learning dan Full Stack Web Development sederhana.",
   bio: [
     "Saya adalah mahasiswa Sistem Informasi di Universitas Multimedia Nusantara (Aug 2023 - Sekarang). Fokus studi saya mencakup analisis data yang kompleks dan pengembangan solusi berbasis web.",
-    "Secara teknis, saya telah membangun arsitektur CycleGAN end-to-end untuk generative art dan melakukan studi komparatif model Machine Learning untuk prediksi kesehatan. Saya juga mahir dalam pengembangan web menggunakan HTML, CSS, JS, dan PHP.",
+    "Secara teknis, saya telah membangun arsitektur CycleGAN end-to-end untuk generative art dan melakukan studi komparatif model Machine Learning untuk prediksi kesehatan.",
     "Di luar teknis, saya aktif dalam kepanitiaan (DISCO & VIT-C Manifest) yang mengasah kemampuan kepemimpinan, kerja tim, dan manajemen logistik saya."
   ],
   avatarUrl: "https://i.ibb.co.com/HfBVwGjd/CEL00086.jpg",
