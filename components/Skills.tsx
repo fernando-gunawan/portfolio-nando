@@ -65,7 +65,10 @@ const Skills: React.FC = () => {
                 {skill.name}
               </h3>
               <div className="w-full bg-slate-800 h-1 mt-4 rounded-full overflow-hidden">
-                <div className="h-full bg-gradient-to-r from-accent to-purple w-[0%] group-hover:w-[85%] transition-all duration-1000 ease-out rounded-full"></div>
+                <div
+                  className="h-full bg-gradient-to-r from-accent to-purple w-[0%] group-hover:w-[var(--skill-level)] transition-all duration-1000 ease-out rounded-full"
+                  style={{ '--skill-level': `${skill.level || 85}%` } as React.CSSProperties}
+                ></div>
               </div>
             </div>
           ))}

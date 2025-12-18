@@ -82,7 +82,7 @@ function App() {
           </a>
 
           <div className="hidden md:flex gap-8 text-sm font-medium text-slate-200">
-            {['Bio', 'Skills', 'Projects', 'Experience', 'Organization'].map((item) => (
+            {['Bio', 'Projects', 'Skills', 'Organization', 'Experience'].map((item) => (
               <a key={item} href={`#${item.toLowerCase()}`} className="hover:text-accent transition-colors relative group">
                 {item}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full box-shadow-[0_0_10px_theme('colors.accent')]"></span>
@@ -91,7 +91,7 @@ function App() {
           </div>
 
           <a href="#contact" className="px-5 py-2.5 rounded-lg border border-white/10 bg-white/5 text-white hover:bg-accent hover:text-slate-900 hover:border-accent transition-all duration-300 text-sm font-semibold backdrop-blur-sm shadow-lg hover:shadow-[0_0_20px_rgba(6,182,212,0.4)]">
-            Contact Me
+            Contact Me!
           </a>
         </div>
       </nav>
@@ -154,7 +154,7 @@ function App() {
                 )}
 
                 <a href="#contact" className="px-8 py-4 bg-transparent text-white rounded-lg font-semibold hover:bg-white/5 transition-all border border-white/20 backdrop-blur-sm hover:border-white/40">
-                  Let's Talk
+                  My Contacts
                 </a>
               </div>
             </div>
@@ -172,7 +172,7 @@ function App() {
                     <img
                       src={USER_INFO.avatarUrl}
                       alt={USER_INFO.name}
-                      className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 filter grayscale contrast-125 group-hover:grayscale-0"
+                      className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 filter contrast-125"
                     />
                     {/* Gradient Overlay on Image */}
                     <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent opacity-80 group-hover:opacity-40 transition-opacity duration-500"></div>
@@ -200,11 +200,6 @@ function App() {
           <ChevronDown size={32} />
         </div>
       </header>
-
-      {/* Skills Section */}
-      <div className="container mx-auto max-w-7xl">
-        <Skills />
-      </div>
 
       {/* Projects Section */}
       <section id="projects" className="py-24 relative">
@@ -236,22 +231,10 @@ function App() {
         </div>
       </section>
 
-      {/* Experience Section */}
-      <section id="experience" className="py-24 relative overflow-hidden">
-        {/* Decorative Blur */}
-        <div className="absolute top-1/2 left-0 w-96 h-96 bg-accent/5 rounded-full blur-[100px] -z-10 pointer-events-none"></div>
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-purple/5 rounded-full blur-[100px] -z-10 pointer-events-none"></div>
-
-        <div className="container mx-auto px-6 max-w-7xl relative z-10">
-          <div className="text-center mb-16 reveal">
-            <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Experience Journey</h2>
-            <div className="inline-block px-4 py-1 rounded-full border border-white/10 bg-white/5 text-slate-200 text-sm font-mono">
-              Professional & Part-time Roles
-            </div>
-          </div>
-          <Timeline />
-        </div>
-      </section>
+      {/* Skills Section */}
+      <div className="container mx-auto max-w-7xl">
+        <Skills />
+      </div>
 
       {/* Organization Section */}
       <section id="organization" className="py-24 relative glass">
@@ -267,6 +250,23 @@ function App() {
           <div className="reveal">
             <Organization />
           </div>
+        </div>
+      </section>
+
+      {/* Experience Section */}
+      <section id="experience" className="py-24 relative overflow-hidden">
+        {/* Decorative Blur */}
+        <div className="absolute top-1/2 left-0 w-96 h-96 bg-accent/5 rounded-full blur-[100px] -z-10 pointer-events-none"></div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-purple/5 rounded-full blur-[100px] -z-10 pointer-events-none"></div>
+
+        <div className="container mx-auto px-6 max-w-7xl relative z-10">
+          <div className="text-center mb-16 reveal">
+            <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Experience Journey</h2>
+            <div className="inline-block px-4 py-1 rounded-full border border-white/10 bg-white/5 text-slate-200 text-sm font-mono">
+              Professional & Part-time Roles
+            </div>
+          </div>
+          <Timeline />
         </div>
       </section>
 

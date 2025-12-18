@@ -21,20 +21,20 @@ export const USER_INFO = {
 
 export const SKILLS: Skill[] = [
   // Hard Skills from Projects & Skills Section
-  { name: "Data Analysis", category: "Soft Skill" },
-  { name: "Machine Learning", category: "Framework" },
-  { name: "Python", category: "Language" },
-  { name: "MySQL", category: "Language" },
-  { name: "PHP", category: "Language" },
-  { name: "HTML/CSS/JS", category: "Language" },
-  { name: "Bootstrap 5", category: "Framework" },
-  { name: "XGBoost", category: "Framework" },
-  { name: "Deep Learning (GAN)", category: "Framework" },
+  { name: "Data Analysis", category: "Soft Skill", level: 85 },
+  { name: "Machine Learning", category: "Framework", level: 75 },
+  { name: "Python", category: "Language", level: 85 },
+  { name: "MySQL", category: "Language", level: 60 },
+  { name: "PHP", category: "Language", level: 70 },
+  { name: "HTML/CSS/JS", category: "Language", level: 80 },
+  { name: "Bootstrap 5", category: "Framework", level: 70 },
+  { name: "XGBoost", category: "Framework", level: 75 },
+  { name: "Deep Learning (GAN)", category: "Framework", level: 75 },
   // Soft Skills form CV
-  { name: "Front End Dev", category: "Tool" },
-  { name: "Teamwork", category: "Soft Skill" },
-  { name: "Problem-Solving", category: "Soft Skill" },
-  { name: "Leadership", category: "Soft Skill" },
+  { name: "Front End Dev", category: "Tool", level: 80 },
+  { name: "Teamwork", category: "Soft Skill", level: 90 },
+  { name: "Problem-Solving", category: "Soft Skill", level: 85 },
+  { name: "Leadership", category: "Soft Skill", level: 75 },
 ];
 
 // MANUAL PROJECTS INPUT

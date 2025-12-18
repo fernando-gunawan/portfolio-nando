@@ -37,6 +37,7 @@ export interface Skill {
   name: string;
   category: 'Language' | 'Tool' | 'Soft Skill' | 'Framework';
   icon?: React.ReactNode;
+  level?: number; // 0 - 100
 }
 
 export interface Experience {
